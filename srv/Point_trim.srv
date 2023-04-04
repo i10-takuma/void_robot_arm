@@ -1,0 +1,6 @@
+# Example service file for a ROS service that takes a string as input and returns a PointCloud2
+# The service name is "pointcloud_from_string"
+
+string name  # The input string
+---
+sensor_msgs/PointCloud2 point  # The output PointCloud2
