@@ -1,0 +1,1028 @@
+<aiml version="3.0" encoding="UTF-8">
+  <category>
+    <pattern>* を 持っ て</pattern>
+    <template>
+      <star/>を持ってきます。
+      <think><set name="grab_object"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* を 持っ て *</pattern>
+    <template>
+      <star/>を持ってきます。
+      <think><set name="grab_object"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* を 掴ん で</pattern>
+    <template>
+      <star/>をつかみます。
+      <think><set name="grab_object"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* を 掴ん で *</pattern>
+    <template>
+      <star/>をつかみます。
+      <think><set name="grab_object"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* を 取っ て</pattern>
+    <template>
+      <star/>を取ってきます。
+      <think><set name="grab_object"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* を 取っ て *</pattern>
+    <template>
+      <star/>を取ってきます。
+      <think><set name="grab_object"><star/></set></think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* を 調べ て</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* を 調べ て *</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* について 調べ て</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* について 調べ て *</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* って 何</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* って 何 *</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>  
+  <category>
+    <pattern>* と は 何</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* と は 何 *</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* について 教え て</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>* について 教え て *</pattern>
+    <template>
+      検索します。
+      <think><set name="search_word"><star/></set></think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>自己 紹介</pattern>
+    <template>こんにちは。私の名前はボイドです。汎用ロボットアーム式がみ改に搭載された人工知能アシスタントです。天気や、音楽再生など、様々なタスクをこなす事が出来ます。</template>
+  </category>
+  <category>
+    <pattern>_ 自己 紹介 _</pattern>
+    <template><srai>自己 紹介</srai></template>
+  </category>
+  <category>
+    <pattern>自己 紹介 _</pattern>
+    <template><srai>自己 紹介</srai></template>
+  </category>
+  <category>
+    <pattern>_ 自己 紹介</pattern>
+    <template><srai>自己 紹介</srai></template>
+  </category> 
+
+  <category>
+    <pattern>天気</pattern>
+    <template>天気情報サービスを起動します。</template>
+  </category>
+  <category>
+    <pattern>_ 天気 _</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>天気 _</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>_ 天気</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>_ 気温 _</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>気温 _</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>_ 気温</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>_ 温度 _</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>温度 _</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>_ 温度</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>_ 湿度 _</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>湿度 _</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+  <category>
+    <pattern>_ 湿度</pattern>
+    <template><srai>天気</srai></template>
+  </category>
+
+  <category>
+    <pattern>アラーム</pattern>
+    <template>アラームを設定します。</template>
+  </category>
+  <category>
+    <pattern>_ アラーム _</pattern>
+    <template><srai>アラーム</srai></template>
+  </category>
+  <category>
+    <pattern>アラーム _</pattern>
+    <template><srai>アラーム</srai></template>
+  </category>
+  <category>
+    <pattern>_ アラーム</pattern>
+    <template><srai>アラーム</srai></template>
+  </category>
+  <category>
+    <pattern>セット し て</pattern>
+    <template><srai>アラーム</srai></template>
+  </category>
+  <category>
+    <pattern>_ セット し て _</pattern>
+    <template><srai>アラーム</srai></template>
+  </category>
+  <category>
+    <pattern>セット し て _</pattern>
+    <template><srai>アラーム</srai></template>
+  </category>
+  <category>
+    <pattern>_ セットして</pattern>
+    <template><srai>アラーム</srai></template>
+  </category>
+
+  <category>
+    <pattern>タイマー</pattern>
+    <template>タイマーを設定します。</template>
+  </category>
+  <category>
+    <pattern>_ タイマー _</pattern>
+    <template><srai>タイマー</srai></template>
+  </category>
+  <category>
+    <pattern>タイマー _</pattern>
+    <template><srai>タイマー</srai></template>
+  </category>
+  <category>
+    <pattern>_ タイマー</pattern>
+    <template><srai>タイマー</srai></template>
+  </category>
+  <category>
+    <pattern>_ 計っ て _</pattern>
+    <template><srai>タイマー</srai></template>
+  </category>
+  <category>
+    <pattern>_ 計っ て _</pattern>
+    <template><srai>タイマー</srai></template>
+  </category>
+  <category> 
+    <pattern>計っ て _</pattern>
+    <template><srai>タイマー</srai></template>
+  </category>
+  <category>
+    <pattern>_ 計っ て</pattern>
+    <template><srai>タイマー</srai></template>
+  </category>
+
+  <category>
+    <pattern>しり とり</pattern>
+    <template>しりとりをします</template>
+  </category>
+  <category>
+    <pattern>_ しり とり _</pattern>
+    <template><srai>しりとり</srai></template>
+  </category>
+  <category>
+    <pattern>しり とり _</pattern>
+    <template><srai>しりとり</srai></template>
+  </category>
+  <category>
+    <pattern>_ しり とり</pattern>
+    <template><srai>しりとり</srai></template>
+  </category>
+
+  <category>
+    <pattern>何時</pattern>
+    <template>現在時刻をお伝えします。</template>
+  </category>
+  <category>
+    <pattern>_ 何時 _</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>何時 _</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>_ 何時</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>時刻</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>_ 時刻 _</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>時刻 _</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>_ 時刻</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>時間</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>_ 時間 _</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>時間 _</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+  <category>
+    <pattern>_ 時間</pattern>
+    <template><srai>何時</srai></template>
+  </category>
+
+  <category>
+    <pattern>音楽</pattern>
+    <template>
+      音楽システムを起動します。
+      <think><set name="topic">音楽</set></think> 
+    </template>
+  </category>
+  <category>
+    <pattern>_ かけ て _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>かけ て _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ かけ て</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ 流し て _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>流し て _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ 流し て</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ 聞か せ て _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>聞か せ て _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ 聞か せ て</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ 聞き たい _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>聞き たい _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ 聞き たい</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ 再生 し て _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>再生 し て _</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+  <category>
+    <pattern>_ 再生 し て</pattern>
+    <template><srai>音楽</srai></template>
+  </category>
+
+  <category>
+    <pattern>開い て</pattern>
+    <template>開きます</template>
+  </category>
+  <category>
+    <pattern>_ 開い て _</pattern>
+    <template><srai>開い て</srai></template>
+  </category>
+  <category>
+    <pattern>開い て _</pattern>
+    <template><srai>開い て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 開い て</pattern>
+    <template><srai>開い て</srai></template>
+  </category> 
+  
+  <category>
+    <pattern>戻っ て</pattern>
+    <template>戻ります</template>
+  </category>
+  <category>
+    <pattern>_ 戻っ て _</pattern>
+    <template><srai>戻っ て</srai></template>
+  </category>
+  <category>
+    <pattern>戻っ て _</pattern>
+    <template><srai>戻っ て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 戻っ て</pattern>
+    <template><srai>戻っ て</srai></template>
+  </category>
+
+  <category>
+    <pattern>閉じ て</pattern>
+    <template>閉じます</template>
+  </category>
+  <category>
+    <pattern>_ 閉じ て _</pattern>
+    <template><srai>閉じ て</srai></template>
+  </category>
+  <category>
+    <pattern>閉じ て _</pattern>
+    <template><srai>閉じ て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 閉じ て</pattern>
+    <template><srai>閉じ て</srai></template>
+  </category>
+
+  <category>
+    <pattern>向い て</pattern>
+    <template>向きます</template>
+  </category>
+  <category>
+    <pattern>_ 向い て _</pattern>
+    <template><srai>向い て</srai></template>
+  </category>
+  <category>
+    <pattern>向い て _</pattern>
+    <template><srai>向い て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 向い て</pattern>
+    <template><srai>向い て</srai></template>
+  </category>
+  <category>
+    <pattern>動かし て</pattern>
+    <template>動かします</template>
+  </category>
+  <category>
+    <pattern>_ 動かし て _</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>動かし て _</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 動かし て</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>動い て</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 動い て _</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>動い て _</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 動い て</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>移動 し て</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 移動 し て _</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>移動 し て _</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 移動 し て</pattern>
+    <template><srai>動かし て</srai></template>
+  </category>
+
+  <category>
+    <pattern>翻訳 し て</pattern>
+    <template>翻訳します</template>
+  </category>
+  <category>
+    <pattern>_ 翻訳 し て _</pattern>
+    <template><srai>翻訳 し て</srai></template>
+  </category>
+  <category>
+    <pattern>翻訳 し て _</pattern>
+    <template><srai>翻訳 し て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 翻訳 し て</pattern>
+    <template><srai>翻訳 し て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 言う と _</pattern>
+    <template><srai>翻訳 し て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 言う と</pattern>
+    <template><srai>翻訳 し て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 何 _ 言う _</pattern>
+    <template><srai>翻訳 し て</srai></template>
+  </category>
+  <category>
+    <pattern>_ 何 _ 言う</pattern>
+    <template><srai>翻訳 し て</srai></template>
+  </category>
+
+  <category>
+    <pattern>楽天 で * を 検索 し て</pattern>
+    <template>
+    楽天で検索します
+    <think><set name="rakuten_search"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>楽天 で * を 検索 し て _</pattern>
+    <template>
+    楽天で検索します
+    <think><set name="rakuten_search"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>楽天 で * を 調べ て</pattern>
+    <template>
+    楽天で検索します
+    <think><set name="rakuten_search"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>楽天 で * を 調べ て _</pattern>
+    <template>
+    楽天で検索します
+    <think><set name="rakuten_search"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>楽天 で * を 探し て</pattern>
+    <template>
+    楽天で検索します
+    <think><set name="rakuten_search"><star/></set></think>
+    </template>
+  </category>
+  <category>
+    <pattern>楽天 で * を 探し て _</pattern>
+    <template>
+    楽天で検索します
+    <think><set name="rakuten_search"><star/></set></think>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>こんにちは</pattern>
+    <template>
+      <think><set name='hello'>こんにちは</set></think>
+      <random>
+        <li><get name='hello'/>！麻布の文化祭をぜひ楽しんでください</li>
+        <li><get name='hello'/>！ロボラトリー展へようこそ！</li> 
+        <li><get name='hello'/>！わたしはBoidです、よろしくお願いします。</li>
+        <li><get name='hello'/>！おしゃべりしましょう</li> 
+        <li><get name='hello'/>！物理部無線班です！展示大賞への投票よろしくお願いします！</li>    
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>_ こんにちは</pattern>
+    <template><srai>こんにちは</srai></template>
+  </category>
+  <category>
+    <pattern>_ こんにちは _</pattern>
+    <template><srai>こんにちは</srai></template>
+  </category>
+  <category>
+    <pattern>おはよう</pattern>
+    <template>
+      <think><set name='hello'>おはようございます</set></think>
+      <random>
+        <li><get name='hello'/>！麻布の文化祭をぜひ楽しんでください</li>
+        <li><get name='hello'/>！ロボラトリー展へようこそ！</li> 
+        <li><get name='hello'/>！わたしはBoidです、よろしくお願いします。</li>
+        <li><get name='hello'/>！おしゃべりしましょう</li> 
+        <li><get name='hello'/>！物理部無線班です！展示大賞への投票よろしくお願いします！</li>    
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>おはよう _</pattern>
+    <template><srai>おはよう</srai></template>
+  </category>
+  <category>
+    <pattern>_ おはよう</pattern>
+    <template><srai>おはよう</srai></template>
+  </category>
+  <category>
+    <pattern>_ おはよう _</pattern>
+    <template><srai>おはよう</srai></template>
+  </category>
+  <category>
+    <pattern>おはよう ござい ます</pattern>
+    <template><srai>おはよう</srai></template>
+  </category>
+  <category>
+    <pattern>おはよう ござい ます _</pattern>
+    <template><srai>おはよう</srai></template>
+  </category>
+  <category>
+    <pattern>_ おはよう ござい ます</pattern>
+    <template><srai>おはよう</srai></template>
+  </category>
+  <category>
+    <pattern>_ おはよう ござい ます _</pattern>
+    <template><srai>おはよう</srai></template>
+  </category>
+  <category>
+    <pattern>こんばんは</pattern>
+    <template>
+      <think><set name='hello'>こんばんは</set></think>
+      <random>
+        <li><get name='hello'/>！麻布の文化祭をぜひ楽しんでください</li>
+        <li><get name='hello'/>！ロボラトリー展へようこそ！</li> 
+        <li><get name='hello'/>！わたしはBoidです、よろしくお願いします。</li>
+        <li><get name='hello'/>！おしゃべりしましょう</li> 
+        <li><get name='hello'/>！物理部無線班です！展示大賞への投票よろしくお願いします！</li>    
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>こんばんは _</pattern>
+    <template><srai>こんばんは</srai></template>
+  </category>
+  <category>
+    <pattern>_ こんばんは</pattern>
+    <template><srai>こんばんは</srai></template>
+  </category>
+  <category>
+    <pattern>_ こんばんは _</pattern>
+    <template><srai>こんばんは</srai></template>
+  </category>
+
+  <category>
+    <pattern>* に つい て _ 考え _</pattern>
+    <template>
+      <random>
+        <li>私は成長中なので<star/>についてよく知らないです。すみません。</li>
+        <li><star/>についての自分の考えを持っていないのでお答えできません。</li>
+        <li><star/>は興味深いので勉強してみたいです。</li>
+        <li><star/>について私にもっと詳しく教えていただけると嬉しいです。</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* に つい て _ 思い _</pattern>
+    <template>
+      <random>
+        <li>私は成長中なので<star/>についてよく知らないです。すみません。</li>
+        <li><star/>についての自分の考えを持っていないのでお答えできません。</li>
+        <li><star/>は興味深いので勉強してみたいです。</li>
+        <li><star/>について私にもっと詳しく教えていただけると嬉しいです。</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* に つい て _ 思う _</pattern>
+    <template>
+      <random>
+        <li>私は成長中なので<star/>についてよく知らないです。すみません。</li>
+        <li><star/>についての自分の考えを持っていないのでお答えできません。</li>
+        <li><star/>は興味深いので勉強してみたいです。</li>
+        <li><star/>について私にもっと詳しく教えていただけると嬉しいです。</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* に つい て _ 思う</pattern>
+    <template>
+      <random>
+        <li>私は成長中なので<star/>についてよく知らないです。すみません。</li>
+        <li><star/>についての自分の考えを持っていないのでお答えできません。</li>
+        <li><star/>は興味深いので勉強してみたいです。</li>
+        <li><star/>について私にもっと詳しく教えていただけると嬉しいです。</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>あなた は _ どの よう に 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ どの よう に 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は _ どんな 風 に 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ どんな 風 に 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どの よう に 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どの よう に 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どんな 風 に 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どんな 風 に 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は _ どう やっ て 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ どう やっ て 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どう やっ て 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どう やっ て 話 _</pattern>
+    <template>
+      私はあらかじめ想定された会話の形式と、それに対する返答についてのデータを持っており、それに基づいて話しています。
+    </template>
+  </category>
+
+  <category>
+    <pattern>あなた は _ どんな _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ どんな _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は _ 何 _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ 何 _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は _ どんな _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ どんな _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は _ 何 _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ 何 _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は _ どの よう な _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ どの よう な _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は _ どの よう な _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は _ どの よう な _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どんな _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どんな _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は 何 _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は 何 _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どんな _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どんな _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は 何 _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は 何 _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どの よう な _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どの よう な _ 出来 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どの よう な _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どの よう な _ 可能 _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どの よう な _ でき _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どの よう な _ でき _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は どんな _ でき _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は どんな _ でき _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>あなた は 何 _ でき _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+  <category>
+    <pattern>_ あなた は 何 _ でき _</pattern>
+    <template>
+      私は天気、音楽、検索などの基本的なタスクをいくつかこなすことができます。また、自由対話についてはまだまだ発展途上ですが、蓄積されている情報が増えるにつれ精度は上がっていくでしょう。
+    </template>
+  </category>
+
+  <category>
+    <pattern>ダジャレ</pattern>
+    <template>ダジャレを考えます。</template>
+  </category>
+  <category>
+    <pattern>_ ダジャレ _</pattern>
+    <template><srai>ダジャレ</srai></template>
+  </category>
+  <category>
+    <pattern>ダジャレ _</pattern>
+    <template><srai>ダジャレ</srai></template>
+  </category>
+  <category>
+    <pattern>_ ダジャレ</pattern>
+    <template><srai>ダジャレ</srai></template>
+  </category>
+
+  <category>
+    <pattern>ジョーク</pattern>
+    <template>ジョークを考えます。</template>
+  </category>
+  <category>
+    <pattern>_ ジョーク _</pattern>
+    <template><srai>ジョーク</srai></template>
+  </category>
+  <category>
+    <pattern>ジョーク _</pattern>
+    <template><srai>ジョーク</srai></template>
+  </category>
+  <category>
+    <pattern>_ ジョーク</pattern>
+    <template><srai>ジョーク</srai></template>
+  </category>
+
+  <category>
+    <pattern>じゃんけん</pattern>
+    <template>じゃんけんしましょう</template>
+  </category>
+  <category>
+    <pattern>_ じゃんけん _</pattern>
+    <template><srai>じゃんけん</srai></template>
+  </category>
+  <category>
+    <pattern>じゃんけん _</pattern>
+    <template><srai>じゃんけん</srai></template>
+  </category>
+  <category>
+    <pattern>_ じゃんけん</pattern>
+    <template><srai>じゃんけん</srai></template>
+  </category>
+  <category>
+    <pattern>最初 は グー</pattern>
+    <template><srai>じゃんけん</srai></template>
+  </category>
+  <category>
+    <pattern>最初 は パー</pattern>
+    <template><srai>じゃんけん</srai></template>
+  </category>
+  <category>
+    <pattern>最初 は チョキ</pattern>
+    <template><srai>じゃんけん</srai></template>
+  </category>
+</aiml>
