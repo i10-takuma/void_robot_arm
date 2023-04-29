@@ -1,0 +1,16 @@
+    <launch>
+    	<include file="$(find snowboy_ros)/launch/snowboy.launch"/>
+        <node pkg="robot_arm" name="text_talker" type="text_talk.py"/>
+        <node pkg="robot_arm" name="d_system" type="d_system.py" output="screen"/>
+        <node pkg="robot_arm" name="wiki" type="wiki.py"/>
+        <node pkg="robot_arm" name="greco" type="greco.py" output="screen"/>
+        <node pkg="robot_arm" name="rakuten" type="rakuten.py"/>
+        <node pkg="robot_arm" name="translation" type="translation.py"/>
+        <node pkg="robot_arm" name="dentaku" type="dentaku.py"/>
+        <node pkg="robot_arm" name="weather" type="weather.py"/>
+        <node pkg="robot_arm" name="spotify" type="spoend.py"/>
+        <node pkg="robot_arm" name="siritori" type="siri.py"/>
+        <node pkg="robot_arm" name="manual" type="manual.py" output="screen"/>
+        <node pkg="robot_arm" name="vector" type="vector.py"/>
+        <node pkg="robot_arm" name="joke" type="joke.py"/>
+    </launch>
