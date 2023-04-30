@@ -1,0 +1,35 @@
+# Environment variables (contains API keys)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Trained ML model files
+*.model
+*.model2
+*.model3
+*.model4
+*.model5
+*.model6
+*.model7
+*.model8
+*.model9
+*.model10
+crf.model
+svc.model6
+scripts/svc/
+
+# Media output
+scripts/output.avi
+
+# Editor/IDE
+.vscode/
+scripts/.vscode/
+scripts/.cache
+
+# Misc
+scripts/allfiles.txt
+scripts/ararmt.txt
+scripts/無題のドキュメント 1
